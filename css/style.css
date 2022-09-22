@@ -220,7 +220,7 @@ div.contact-image {
     padding-left: 0px;
     padding-right: 0px;
   }
- 
+
   /* Step 10: Write the selector/rule property to update the .container class */
   .container {
     display: grid;
@@ -238,7 +238,7 @@ div.contact-image {
  /* Step 13:Write the selector/rule property to update the .text-block class */
   .text-block {
     max-height: 250px;
-    overflow-y: auto;
-    z-index: auto;
+    overflow-y: auto tabindex = "1";
+    
   }
 }
