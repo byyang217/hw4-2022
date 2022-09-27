@@ -107,17 +107,13 @@ footer{
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-li:hover, li:focus {
+nav li:hover, nav li:focus {
   text-decoration: underline;
 }
 
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 /* hide the div */
-div.skip {
-  position: absolute;
-  top: -10px;
-}
 
 .skip a{
   position: relative;
@@ -131,7 +127,7 @@ div.skip {
 }
 /* Step 3: Write selector/rule property to style all elements when in focus*/
 *:focus {
-  border: 2px solid white;
+  border: 2px solid;
 }
 
 
@@ -140,6 +136,7 @@ div.skip {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   row-gap: 15px;
+  column-gap: 15px;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
@@ -238,7 +235,7 @@ div.contact-image {
  /* Step 13:Write the selector/rule property to update the .text-block class */
   .text-block {
     max-height: 250px;
-    overflow-y: auto tabindex = "0";
+    overflow: auto;
     
   }
 }
